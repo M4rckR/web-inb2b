@@ -1,8 +1,18 @@
+import { HeroOverlay } from "@/components/pages/home/HeroOverlay";
+import { AboutSection } from "@/components/pages/home/AboutSection";
+import { ScheduleServices } from "@/components/pages/home/ScheduleServices";
 
 export default function Home() {
   return (
     <>
-      <h1>Hello World</h1>
+      <header>
+        <HeroOverlay />
+      </header>
+
+      <main>
+        <AboutSection />
+        <ScheduleServices />
+      </main>
     </>
   );
 }
