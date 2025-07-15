@@ -1,7 +1,12 @@
 import { HeroOverlay } from "@/components/pages/home/HeroOverlay";
 import { AboutSection } from "@/components/pages/home/AboutSection";
 import { ScheduleServices } from "@/components/pages/home/ScheduleServices";
-
+import { ClubBenefits } from "@/components/pages/home/ClubBenefits";
+import { OurClients } from "@/components/pages/home/OurClients";
+import { AcademicAlliances } from "@/components/pages/home/AcademicAlliances";
+import { Community } from "@/components/pages/home/Community";
+import { CarouselImagesHome } from "@/components/pages/home/CarouselImagesHome";
+  
 export default function Home() {
   return (
     <>
@@ -12,6 +17,19 @@ export default function Home() {
       <main>
         <AboutSection />
         <ScheduleServices />
+        <ClubBenefits />
+        <OurClients />
+        <AcademicAlliances />
+        <div 
+            className="flex justify-center flex-col items-center bg-in-blue-main bg-gradient-to-b from-transparent via-[#00BEB4]/30 to-[#00BEB4]/30 pb-56"
+        >
+            <p className="font-in-poppins py-16 text-white text-lg">Formarse con visión global es clave para transformar la salud local.</p>
+            <div className="w-0.5 h-28 bg-in-cyan relative">
+                <div className="w-2 h-2 bg-in-cyan rounded-full absolute bottom-0 left-1/2 -translate-x-1/2"></div>
+            </div>
+        </div>
+        <Community />
+        <CarouselImagesHome />
       </main>
     </>
   );

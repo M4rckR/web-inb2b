@@ -4,7 +4,7 @@ import React from 'react'
 
 export const HeroNav = () => {
   return (
-    <div className='max-w-7xl mx-auto px-10 container bg-white/40 backdrop-blur-xl shadow-lg rounded-3xl'>
+    <div className='max-w-7xl fixed left-1/2 -translate-x-1/2 top-6 z-20 mx-auto px-10 container bg-white/40 backdrop-blur-xl shadow-lg rounded-3xl'>
         <nav className='flex justify-between items-center py-6 text-white font-in-poppins'>
             <div className='flex gap-6'>
                 <Link href="/">Nosotros</Link>
