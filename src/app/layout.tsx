@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins, Lato } from "next/font/google";
 import "./globals.css";
+import { Footer } from "@/components/common/Footer";
+import { WhatsAppButton } from "@/components/common/WhatsAppButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,6 +43,11 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         {children}
+        <WhatsAppButton 
+          phoneNumber="51999999999"
+          message="¡Hola! Me gustaría obtener más información sobre INB2B"
+        />
+        <Footer />
       </body>
     </html>
   );

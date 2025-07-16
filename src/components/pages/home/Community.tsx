@@ -12,54 +12,82 @@ export const Community = () => {
               width={900} 
               height={100} 
               unoptimized
-              className="w-full absolute -mt-64" 
+              className="hidden md:block w-full absolute -mt-72" 
+            />
+            <Image 
+              src="/images/semi-ellipse-mobile.png" 
+              alt="Wave" 
+              width={500} 
+              height={100} 
+              unoptimized
+              className="block md:hidden w-full absolute -mt-72" 
             />
 
-
       </div>
-      <div className=" relative z-10">
+      <div className=" relative z-10 max-w-7xl mx-auto px-4 container">
         <div className="space-y-8">
-          <h2 className="text-white text-center text-4xl font-in-lato">
+          <h2 className="text-white text-center text-2xl md:text-4xl font-in-lato">
           Comunidad & <br /> Eventos Regionales
           </h2>
-          <p className="text-white text-center font-in-poppins max-w-3xl text-lg mx-auto">
+          <p className="text-white text-center font-in-poppins max-w-3xl text-base md:text-lg mx-auto">
           Estamos construyendo una comunidad regional activa en WhatsApp, conformada por líderes de proyectos de salud en Perú, Ecuador, Panamá y más.
           </p>
         </div>
 
-        <section className="max-w-6xl mx-auto px-4 container py-24">
-          <div className="grid grid-cols-12 gap-16">
-            <div className="col-span-7">
+        <section className="max-w-6xl mx-auto container py-24">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-16">
+            <div className="col-span-1 md:col-span-7">
               <div className="space-y-16 mb-8">
 
                 <div>
                   <p className="font-in-lato text-xl text-in-cyan pb-2">En esta comunidad encontrarás:</p>
-                  <ul className="text-white pl-6 font-in-poppins">
-                    <li className="list-disc">Consejos prácticos sobre gestión, marketing y expansión</li>
-                    <li className="list-disc">Invitaciones a eventos digitales y presenciales</li>
-                    <li className="list-disc">Lanzamiento de programas, contenidos y convocatorias INB2B</li>
-                    <li className="list-disc">Espacios de colaboración entre empresarios del sector</li>
+                  <ul className="text-white font-in-poppins">
+                    <div className="flex items-start gap-4">
+                      <div className="w-2 h-2 bg-in-cyan flex-shrink-0 rounded-full mt-2"></div>
+                      <p className="text-white font-in-poppins">Consejos prácticos sobre gestión, marketing y expansión</p>
+                    </div>
+                    <div className="flex items-start gap-4">
+                      <div className="w-2 h-2 bg-in-cyan flex-shrink-0 rounded-full mt-2"></div>
+                      <p className="text-white font-in-poppins">Invitaciones a eventos digitales y presenciales</p>
+                    </div>
+                    <div className="flex items-start gap-4">
+                      <div className="w-2 h-2 bg-in-cyan flex-shrink-0 rounded-full mt-2"></div>
+                      <p className="text-white font-in-poppins">Lanzamiento de programas, contenidos y convocatorias INB2B</p>
+                    </div>
+                    <div className="flex items-start gap-4">
+                      <div className="w-2 h-2 bg-in-cyan flex-shrink-0 rounded-full mt-2"></div>
+                      <p className="text-white font-in-poppins">Espacios de colaboración entre empresarios del sector</p>
+                    </div>
                   </ul>
                 </div>
 
                 <div>
                   <p className="font-in-lato text-xl text-in-cyan pb-2">Además, organizamos periódicamente:</p>
-                  <ul className="text-white pl-6 font-in-poppins">
-                    <li className="list-disc">Eventos presenciales y experiencias de networking en ciudades clave</li>
-                    <li className="list-disc">Talleres y desayunos ejecutivos para clínicas y consultorios en crecimiento</li>
-                    <li className="list-disc">Espacios colaborativos con universidades y actores del ecosistema salud</li>
+                  <ul className="text-white font-in-poppins">
+                    <div className="flex items-start gap-4">
+                      <div className="w-2 h-2 bg-in-cyan flex-shrink-0 rounded-full mt-2"></div>
+                      <p className="text-white font-in-poppins">Eventos presenciales y experiencias de networking en ciudades clave</p>
+                    </div>
+                    <div className="flex items-start gap-4">
+                      <div className="w-2 h-2 bg-in-cyan flex-shrink-0 rounded-full mt-2"></div>
+                      <p className="text-white font-in-poppins">Talleres y desayunos ejecutivos para clínicas y consultorios en crecimiento</p>
+                    </div>
+                    <div className="flex items-start gap-4">
+                      <div className="w-2 h-2 bg-in-cyan flex-shrink-0 rounded-full mt-2"></div>
+                      <p className="text-white font-in-poppins">Espacios colaborativos con universidades y actores del ecosistema salud</p>
+                    </div>
                   </ul>
                 </div>
 
 
               </div>
-              <Button className="bg-in-cyan hover:bg-in-cyan/80 rounded-full text-lg py-6 px-10">
+              <Button className="bg-in-cyan font-in-poppins hover:bg-in-cyan/80 rounded-full text-lg py-6 px-10 text-black">
                 <Link href="/community">
                   Unirme ahora
                 </Link>
               </Button>
             </div>
-            <div className="col-span-5">
+            <div className="col-span-1 md:col-span-5 hidden md:block">
               <Image  src="/images/comunidad-image.png" alt="Community" width={500} height={500} className="w-full h-full object-cover mx-auto" />
             </div>
           </div>

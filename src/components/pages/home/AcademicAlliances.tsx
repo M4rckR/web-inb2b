@@ -11,10 +11,12 @@ export const AcademicAlliances = () => {
                     <p className="font-in-poppins text-center md:text-left">INB2B promueve la formación continua de líderes en salud a través de alianzas académicas con instituciones internacionales como la Universidad de Manresa (UVic-UCC) en España y otras universidades líderes en innovación en salud.</p>
                 </div>
                 <div className="flex justify-center">
-                    <Image src="/images/arbol-gray.png" alt="Academic Alliances" width={300} height={300} />
+                    <Image src="/images/diplomados-secciones.png" alt="Academic Alliances" width={300} height={300} />
                 </div>
             </div>
-            <AcademicAccordion />
+            <div className="hidden md:block">
+                <AcademicAccordion />
+            </div>
         </section>
     </div>
   )

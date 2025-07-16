@@ -1,23 +1,76 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 export const HeroNav = () => {
   return (
-    <div className='max-w-7xl fixed left-1/2 -translate-x-1/2 top-6 z-20 mx-auto px-10 container bg-white/40 backdrop-blur-xl shadow-lg rounded-3xl'>
-        <nav className='flex justify-between items-center py-6 text-white font-in-poppins'>
-            <div className='flex gap-6'>
-                <Link href="/">Nosotros</Link>
-                <Link href="/">Servicios</Link>
-                <Link href="/">Unete al equipo</Link>
-            </div>
-            <Image src="/svg/logo-inb2b.svg" alt="Logo" width={151} height={50} />
-            <div className='flex items-center gap-6'>
-                <Link href="/">InAcademy</Link>
-                <Link href="/">Health Business Club</Link>
-                <Link className='bg-in-cyan text-white px-8 py-2 rounded-full transition-all duration-300 hover:bg-in-cyan/80' href="/">Contactanos</Link>
-            </div>
+    <div className="px-4">
+      <div
+        style={{
+          background:
+            "linear-gradient(127deg, rgba(255, 255, 255, 0.40) 12.11%, rgba(255, 255, 255, 0.10) 73.08%)", // Más oscuro para mejor contraste
+          boxShadow: "0px 2.874px 17.246px -0.719px rgba(0, 0, 0, 0.20)", // Sombra más marcada
+          backdropFilter: "blur(14px)",
+        }}
+        className="max-w-7xl md:fixed md:left-1/2 md:-translate-x-1/2 md:top-6 md:z-20 mx-auto px-10 container rounded-3xl"
+      >
+        <nav className="flex justify-between items-center py-4 md:py-6 text-gray-100 font-in-poppins">
+          <div className="hidden lg:flex flex-col lg:flex-row gap-6">
+            <Link href="/">Nosotros</Link>
+            <Link href="/">Servicios</Link>
+            <Link href="/">Unete al equipo</Link>
+          </div>
+          <Image
+            className="mr-auto w-24 lg:w-auto lg:mx-auto"
+            src="/svg/logo-inb2b.svg"
+            alt="Logo"
+            width={151}
+            height={50}
+          />
+          <div className="hidden lg:flex flex-col lg:flex-row items-center gap-6">
+            <Link href="/">InAcademy</Link>
+            <Link href="/">Health Business Club</Link>
+            <Link
+              className="bg-in-cyan text-black px-8 py-2 rounded-full transition-all duration-300 hover:bg-in-cyan/80"
+              href="/"
+            >
+              Contactanos
+            </Link>
+          </div>
+
+          <div className="lg:hidden">
+            <Sheet>
+              <SheetTrigger>
+                <Image
+                  src="/svg/hamburguer.svg"
+                  alt="Menu"
+                  width={36}
+                  height={36}
+                  className="my-auto"
+                />  
+              </SheetTrigger>
+              <SheetContent className="bg-in-blue-dark border-none">
+                <SheetHeader className="text-white bg-in-blue-dark pt-12 space-y-2">
+                  <SheetTitle className="sr-only">Menú de navegación</SheetTitle>
+                  <Link href="/">Nosotros</Link>
+                  <Link href="/">Servicios</Link>
+                  <Link href="/">Unete al equipo</Link>
+                  <Link href="/">InAcademy</Link>
+                  <Link href="/">Health Business Club</Link>
+                  <Link href="/">Contactanos</Link>
+                </SheetHeader>
+              </SheetContent>
+            </Sheet>
+          </div>
         </nav>
+      </div>
     </div>
-  )
-}
+  );
+};

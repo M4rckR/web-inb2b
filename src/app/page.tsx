@@ -5,7 +5,7 @@ import { ClubBenefits } from "@/components/pages/home/ClubBenefits";
 import { OurClients } from "@/components/pages/home/OurClients";
 import { AcademicAlliances } from "@/components/pages/home/AcademicAlliances";
 import { Community } from "@/components/pages/home/Community";
-import { CarouselImagesHome } from "@/components/pages/home/CarouselImagesHome";
+import { ContactHomeTab } from "@/components/pages/home/ContactHomeTab";
   
 export default function Home() {
   return (
@@ -21,15 +21,17 @@ export default function Home() {
         <OurClients />
         <AcademicAlliances />
         <div 
-            className="flex justify-center flex-col items-center bg-in-blue-main bg-gradient-to-b from-transparent via-[#00BEB4]/30 to-[#00BEB4]/30 pb-56"
+            className="flex justify-center flex-col items-center bg-in-blue-main bg-gradient-to-b from-transparent via-[#00BEB4]/30 to-[#00BEB4]/30 pb-44 md:pb-56"
         >
-            <p className="font-in-poppins py-16 text-white text-lg">Formarse con visión global es clave para transformar la salud local.</p>
-            <div className="w-0.5 h-28 bg-in-cyan relative">
+            <p className="font-in-poppins md:py-16 text-center md:text-left pb-6 md:pb-0 px-4 md:px-0 text-white text-lg">Formarse con visión global es clave para transformar la salud local.</p>
+            <div className="w-0.5 h-16 md:h-28 bg-in-cyan relative">
                 <div className="w-2 h-2 bg-in-cyan rounded-full absolute bottom-0 left-1/2 -translate-x-1/2"></div>
             </div>
         </div>
+        |
         <Community />
-        <CarouselImagesHome />
+        <ContactHomeTab />
+        {/* <CarouselImagesHome /> */}
       </main>
     </>
   );
