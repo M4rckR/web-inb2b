@@ -1,3 +1,7 @@
+"use client";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -10,8 +14,11 @@ import {
 } from "@/components/ui/sheet";
 
 export const HeroNav = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <div className="px-4">
+    <div data-aos="fade-up" className="px-4">
       <div
         style={{
           background:
@@ -21,11 +28,10 @@ export const HeroNav = () => {
         }}
         className="container max-w-7xl md:fixed md:left-1/2 md:-translate-x-1/2 md:top-6 md:z-30 mx-auto px-10 lg:px-10 rounded-3xl"
       >
-        <nav className="flex justify-between items-center py-4 md:py-6 text-gray-100 font-in-poppins">
+        <nav role="navigation" aria-label="Navegación principal" className="flex justify-between items-center py-4 md:py-6 text-gray-100 font-in-poppins">
           <div className="hidden lg:flex flex-col lg:flex-row gap-6">
             <Link href="#nosotros">Nosotros</Link>
             <Link href="#servicios">Servicios</Link>
-            <Link href="#unete-al-equipo">Unete al equipo</Link>
           </div>
           <Image
             className="mr-auto w-24 lg:w-auto lg:mx-auto"
@@ -35,7 +41,6 @@ export const HeroNav = () => {
             height={50}
           />
           <div className="hidden lg:flex flex-col lg:flex-row items-center gap-6">
-            <Link href="/">InAcademy</Link>
             <Link href="#club-benefits">Health Business Club</Link>
             <Link
               className="bg-in-cyan text-black px-8 py-2 rounded-full transition-all duration-300 hover:bg-in-cyan/80"
@@ -61,10 +66,8 @@ export const HeroNav = () => {
                   <SheetTitle className="sr-only">Menú de navegación</SheetTitle>
                   <Link href="/">Nosotros</Link>
                   <Link href="/">Servicios</Link>
-                  <Link href="/">Unete al equipo</Link>
-                  <Link href="/">InAcademy</Link>
                   <Link href="/">Health Business Club</Link>
-                  <Link href="/">Contactanos</Link>
+                  <Link href="#contactanos">Contactanos</Link>
                 </SheetHeader>
               </SheetContent>
             </Sheet>

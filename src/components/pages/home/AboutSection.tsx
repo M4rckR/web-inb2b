@@ -1,7 +1,15 @@
+"use client";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export const AboutSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <div id="nosotros" className="bg-in-blue-main text-white py-12 md:py-24">
-        <section className="max-w-7xl mx-auto px-4 container space-y-16">
+    <div id="nosotros"  className="bg-in-blue-main text-white py-12 md:py-24">
+        <section data-aos="fade-up" className="max-w-7xl mx-auto px-4 container space-y-16">
             <div className="space-y-4">
                 <h2 className="text-2xl md:text-4xl font-in-avantgarde font-bold text-center">Sobre nosotros</h2>
                 <p className="text-base md:text-lg font-in-poppins max-w-6xl mx-auto text-center leading-[22px]">Somos una agencia consultora especializada en el desarrollo integral de proyectos en el sector salud. Ofrecemos soluciones innovadoras y estratégicas para la implementación, optimización y gestión de servicios de salud, adaptadas a las necesidades específicas de cada cliente.  Nuestro enfoque abarca desde la planificación hasta la ejecución, con el objetivo de mejorar la calidad, eficiencia y sostenibilidad de los proyectos en salud.</p>
@@ -13,7 +21,7 @@ export const AboutSection = () => {
                   }}
                   className="flex items-center py-4 rounded-xl box-shadow-lg lg:pl-8 justify-center lg:justify-start"
                 >
-                    <p className="text-3xl font-bold text-in-cyan font-in-lato text-center lg:text-left">+10 <span className="block text-base font-normal text-white font-in-poppins">Años de experiencia</span></p>
+                    <p className="text-3xl font-bold text-in-cyan font-in-lato text-center lg:text-left">+100  <span className="block text-base font-normal text-white font-in-poppins">Clientes</span></p>
                 </article>
                 <article    
                   style={{
@@ -21,7 +29,7 @@ export const AboutSection = () => {
                   }}
                   className="flex items-center py-4 rounded-xl box-shadow-lg lg:pl-8 justify-center lg:justify-start"
                 >   
-                    <p className="text-3xl font-bold text-in-cyan font-in-lato text-center lg:text-left">+100 <span className="block text-base font-normal text-white font-in-poppins">Clientes atendidos</span></p>
+                    <p className="text-3xl font-bold text-in-cyan font-in-lato text-center lg:text-left">+6 <span className="block text-base font-normal text-white font-in-poppins">Años de experiencia</span></p>
                 </article>
                 <article 
                   style={{
@@ -29,7 +37,8 @@ export const AboutSection = () => {
                   }}
                   className="flex items-center py-4 rounded-xl box-shadow-lg lg:pl-8 justify-center lg:justify-start"
                 >
-                    <p className="text-3xl font-bold text-in-cyan font-in-lato text-center lg:text-left">+657 <span className="block text-base font-normal text-white font-in-poppins">Proyectos realizados</span></p>
+                    <p className="text-3xl font-bold text-in-cyan font-in-lato text-center lg:text-left">+130 <span className="block text-base font-normal text-white font-in-poppins">Proyectos realizados
+                    </span></p>
                 </article>
                 <article 
                   style={{

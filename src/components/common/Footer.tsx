@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { FaFacebookF, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa"
+import {FaInstagram, FaTiktok } from "react-icons/fa"
 
 export const Footer = () => {
   return (
@@ -36,23 +36,17 @@ export const Footer = () => {
                     </div>
                 </div>
                 <div>
-                    <div className="grid grid-cols-2 gap-4 pb-4">
+                    {/* <div className="grid grid-cols-2 gap-4 pb-4">
                         <div className="bg-blue-800 rounded-lg col-span-2 py-4">XD</div>
                         <div className="bg-blue-800 rounded-lg py-4">XD</div>
                         <div className="bg-blue-800 rounded-lg py-4">XD</div>
-                    </div>
+                    </div> */}
                     <div className="flex items-center gap-4">
-                        <Link href="#">
-                            <FaFacebookF size={22} color="white"/>
-                        </Link>
-                        <Link href="#">
+                        <Link href="https://www.tiktok.com/@inb2.b?_t=ZM-8y6jhmFvG5d&_r=1" target="_blank" rel="noopener noreferrer">
                             <FaTiktok size={22} color="white"/>
                         </Link>
-                        <Link href="#">
+                        <Link href="https://www.instagram.com/inb2.b?igsh=MW9ucXF1M2hnN2x1" target="_blank" rel="noopener noreferrer">
                             <FaInstagram size={22} color="white"/>
-                        </Link>
-                        <Link href="#">
-                            <FaYoutube size={22} color="white"/>
                         </Link>
                     </div>
                 </div>

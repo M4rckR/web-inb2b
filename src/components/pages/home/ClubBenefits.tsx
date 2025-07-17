@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { benefitsMain } from "@/data/benefitsMain";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import Link from "next/link";
 
 export const ClubBenefits = () => {
   return (
@@ -98,9 +99,11 @@ export const ClubBenefits = () => {
                 </CarouselContent>
           </Carousel>
         </div>
-        <button className="bg-in-cyan mt-12 text-black font-in-poppins text-lg leading-6 px-12 py-4 rounded-full mx-auto block hover:bg-in-cyan/80 transition-all duration-300 cursor-pointer">
-          Únete al club
-        </button>
+        <Link href="https://chat.whatsapp.com/CDs3m8GxO4N5G9hgVO2kMo?mode=r_t" target="_blank" rel="noopener noreferrer">
+            <button className="bg-in-cyan mt-12 text-black font-in-poppins text-lg leading-6 px-12 py-4 rounded-full mx-auto block hover:bg-in-cyan/80 transition-all duration-300 cursor-pointer">
+                Únete al club
+            </button>
+        </Link>
       </section>
     </div>
   );

@@ -29,7 +29,7 @@ export const HeroOverlay = () => {
         </div>
 
         <div className="max-w-7xl mx-auto px-4 pt-12 pb-14 md:py-24 container space-y-6 text-white md:translate-y-1/2 md:top-1/2">
-          <div className="absolute md:relative bottom-12 space-y-6">
+          <div data-aos="fade-up" className="absolute md:relative bottom-12 space-y-6">
             <h1 className="text-3xl md:text-5xl lg:text-6xl w-full lg:w-1/2 max-w-2xl font-in-avantgarde md:px-0 pr-4">Transformamos ideas 
             en negocios de salud rentables en LATAM </h1>
             <div className="font-in-poppins flex flex-col md:flex-row md:items-center  items-start gap-4 ">

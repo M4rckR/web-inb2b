@@ -36,7 +36,7 @@ export const AcademicAccordion = () => {
 
           <Image
             src="/images/image-accordion-1.png"
-            alt="Academic Accordion 1"
+            alt="Diplomados internacionales en gestión y tecnologías de salud"
             width={300}
             height={100}
             className={`${
@@ -64,7 +64,7 @@ export const AcademicAccordion = () => {
           </div>
           <Image
             src="/images/image-accordion.png"
-            alt="Academic Accordion 1"
+            alt="Sesiones informativas con ponentes globales"
             width={300}
             height={100}
             className={`${
@@ -92,7 +92,7 @@ export const AcademicAccordion = () => {
           </div>
           <Image
             src="/images/image-accordion.png"
-            alt="Academic Accordion 1"
+            alt="Acompañamiento para viajes académicos"
             width={300}
             height={100}
             className={`${
@@ -120,7 +120,7 @@ export const AcademicAccordion = () => {
           </div>
           <Image
             src="/images/image-accordion.png"
-            alt="Academic Accordion 1"
+            alt="Imagenes exclusivos INB2B"
             width={300}
             height={100}
             className={`${
@@ -135,25 +135,25 @@ export const AcademicAccordion = () => {
             <AccordionTrigger className="text-xl">Diplomados internacionales en gestión, tecnologías en salud y
             estrategia clínica</AccordionTrigger>
             <AccordionContent>
-              <Image src="/images/image-accordion-1.png" alt="Academic Accordion 1" width={300} height={100} className="h-[240px] w-full transition-all duration-300 object-cover rounded-3xl" />
+              <Image src="/images/image-accordion-1.png" alt="Diplomados internacionales en gestión y tecnologías de salud" width={300} height={100} className="h-[240px] w-full transition-all duration-300 object-cover rounded-3xl" />
             </AccordionContent>
           </AccordionItem>
           <AccordionItem className="bg-[#D9D9D9]/10 p-4 border-none rounded-3xl" value="item-2">
             <AccordionTrigger className="text-xl">Sesiones informativas y experiencias modelo con ponentes globales</AccordionTrigger>
             <AccordionContent>
-              <Image src="/images/image-accordion.png" alt="Academic Accordion 1" width={300} height={100} className="h-[240px] w-full transition-all duration-300 object-cover rounded-3xl" />
+              <Image src="/images/image-accordion.png" alt="Sesiones informativas con ponentes globales" width={300} height={100} className="h-[240px] w-full transition-all duration-300 object-cover rounded-3xl" />
             </AccordionContent>
           </AccordionItem>
           <AccordionItem className="bg-[#D9D9D9]/10 p-4 border-none rounded-3xl" value="item-3">
             <AccordionTrigger className="text-xl">Acompañamiento para viajes académicos y pasantías especializadas</AccordionTrigger>
             <AccordionContent>
-              <Image src="/images/image-accordion.png" alt="Academic Accordion 1" width={300} height={100} className="h-[240px] w-full transition-all duration-300 object-cover rounded-3xl" />
+              <Image src="/images/image-accordion.png" alt="Sesiones informativas con ponentes globales" width={300} height={100} className="h-[240px] w-full transition-all duration-300 object-cover rounded-3xl" />
             </AccordionContent>
           </AccordionItem>
           <AccordionItem className="bg-[#D9D9D9]/10 p-4 border-none rounded-3xl" value="item-4">
             <AccordionTrigger className="text-xl">Descuentos exclusivos INB2B para nuestros aliados y clientes</AccordionTrigger>
             <AccordionContent>
-              <Image src="/images/image-accordion.png" alt="Academic Accordion 1" width={300} height={100} className="h-[240px] w-full transition-all duration-300 object-cover rounded-3xl" />
+              <Image src="/images/image-accordion.png" alt="Acompañamiento para viajes académicos" width={300} height={100} className="h-[240px] w-full transition-all duration-300 object-cover rounded-3xl" />
             </AccordionContent>
           </AccordionItem>
         </Accordion>
