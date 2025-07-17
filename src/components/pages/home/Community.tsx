@@ -41,7 +41,7 @@ export const Community = () => {
 
                 <div>
                   <p className="font-in-lato text-xl text-in-cyan pb-2">En esta comunidad encontrarás:</p>
-                  <ul className="text-white font-in-poppins">
+                  <div className="text-white font-in-poppins">
                     <div className="flex items-start gap-4">
                       <div className="w-2 h-2 bg-in-cyan flex-shrink-0 rounded-full mt-2"></div>
                       <p className="text-white font-in-poppins">Consejos prácticos sobre gestión, marketing y expansión</p>
@@ -58,12 +58,12 @@ export const Community = () => {
                       <div className="w-2 h-2 bg-in-cyan flex-shrink-0 rounded-full mt-2"></div>
                       <p className="text-white font-in-poppins">Espacios de colaboración entre empresarios del sector</p>
                     </div>
-                  </ul>
+                  </div>
                 </div>
 
                 <div>
                   <p className="font-in-lato text-xl text-in-cyan pb-2">Además, organizamos periódicamente:</p>
-                  <ul className="text-white font-in-poppins">
+                  <div className="text-white font-in-poppins">
                     <div className="flex items-start gap-4">
                       <div className="w-2 h-2 bg-in-cyan flex-shrink-0 rounded-full mt-2"></div>
                       <p className="text-white font-in-poppins">Eventos presenciales y experiencias de networking en ciudades clave</p>
@@ -76,7 +76,7 @@ export const Community = () => {
                       <div className="w-2 h-2 bg-in-cyan flex-shrink-0 rounded-full mt-2"></div>
                       <p className="text-white font-in-poppins">Espacios colaborativos con universidades y actores del ecosistema salud</p>
                     </div>
-                  </ul>
+                  </div>
                 </div>
 
 
