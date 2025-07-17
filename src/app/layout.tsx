@@ -149,7 +149,7 @@ export default function RootLayout({
         {children}
         <WhatsAppButton 
           phoneNumber="51943583887"
-          message="¡Hola! Me gustaría obtener más información sobre INB2B"
+          message="¡Hola! Vi su web y me gustaría obtener más información sobre INB2B"
         />
         <Footer />
       </body>

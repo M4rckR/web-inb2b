@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const ClubBenefits = () => {
   return (
-    <div id="club-benefits" className="bg-in-blue-main">
+    <div id="health-business-club" className="bg-in-blue-main">
       <section className="container mx-auto max-w-6xl px-4 py-16">
         <div className="relative mb-16">
           <div className="relative w-full h-auto">

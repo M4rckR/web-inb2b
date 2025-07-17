@@ -81,8 +81,8 @@ export const Community = () => {
 
 
               </div>
-              <Button className="bg-in-cyan font-in-poppins hover:bg-in-cyan/80 rounded-full text-lg py-6 px-10 text-black">
-                <Link href="/community">
+              <Button className="bg-in-cyan cursor-pointer font-in-poppins hover:bg-in-cyan/80 rounded-full text-lg py-6 px-10 text-black">
+                <Link href="https://chat.whatsapp.com/CDs3m8GxO4N5G9hgVO2kMo?mode=r_t" target="_blank" rel="noopener noreferrer">
                   Unirme ahora
                 </Link>
               </Button>

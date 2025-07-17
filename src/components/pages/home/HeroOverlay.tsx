@@ -34,7 +34,14 @@ export const HeroOverlay = () => {
             en negocios de salud rentables en LATAM </h1>
             <div className="font-in-poppins flex flex-col md:flex-row md:items-center  items-start gap-4 ">
               <p className="md:text-lg py-2 md:py-0">¿Tienes un proyecto en salud?</p>
-              <Link className="bg-in-cyan px-6 py-2 text-black rounded-full" href="/">Conversemos</Link>
+              <Link
+                className="bg-in-cyan px-6 py-2 text-black rounded-full"
+                href="https://wa.me/51943583887?text=%C2%A1Hola!%20Vi%20su%20web%20y%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%C2%A0sobre%C2%A0INB2B"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Conversemos
+              </Link>
             </div>
           </div>
 

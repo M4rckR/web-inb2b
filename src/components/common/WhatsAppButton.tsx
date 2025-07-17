@@ -7,7 +7,7 @@ interface WhatsAppButtonProps {
 
 export const WhatsAppButton: FC<WhatsAppButtonProps> = ({ 
   phoneNumber = "51943583887", // Número por defecto
-  message = "¡Hola! Me gustaría obtener más información sobre INB2B" // Mensaje por defecto
+  message = "¡Hola! Vi su web y me gustaría obtener más información sobre INB2B" // Mensaje por defecto
 }) => {
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
@@ -19,7 +19,7 @@ export const WhatsAppButton: FC<WhatsAppButtonProps> = ({
       className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full p-4 shadow-lg transition-all duration-300 hover:scale-110 group"
       aria-label="Contactar por WhatsApp"
     >
-      <div className="absolute bottom-full right-0 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <div className="absolute pointer-events-none bottom-full right-0 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <div className="bg-white text-gray-800 rounded-lg px-4 py-2 shadow-md text-sm whitespace-nowrap">
           Contáctanos por WhatsApp
         </div>

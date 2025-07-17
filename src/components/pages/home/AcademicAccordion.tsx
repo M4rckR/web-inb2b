@@ -35,13 +35,13 @@ export const AcademicAccordion = () => {
           </div>
 
           <Image
-            src="/images/image-accordion-1.png"
+            src="/images/diplomados-internaciones.png"
             alt="Diplomados internacionales en gestión y tecnologías de salud"
             width={300}
             height={100}
             className={`${
               expandedCard === 0 ? "opacity-100" : "opacity-0"
-            } h-[240px] w-full transition-all duration-300 object-cover rounded-3xl`}
+            } h-[260px] w-full transition-all duration-300 object-cover rounded-3xl`}
           />
         </div>
         <div
@@ -63,13 +63,14 @@ export const AcademicAccordion = () => {
             {expandedCard === 1 ? null : <Plus color="#00BEB4" size={32} />}
           </div>
           <Image
-            src="/images/image-accordion.png"
+            src="/images/sesiones-informativas.png"
             alt="Sesiones informativas con ponentes globales"
             width={300}
             height={100}
+            unoptimized
             className={`${
               expandedCard === 1 ? "opacity-100" : "opacity-0"
-            } h-[240px] w-full transition-all duration-300 object-cover rounded-3xl`}
+            } h-[260px] w-full transition-all duration-300 object-cover rounded-3xl`}
           />
         </div>
         <div
@@ -91,13 +92,14 @@ export const AcademicAccordion = () => {
             {expandedCard === 2 ? null : <Plus color="#00BEB4" size={32} />}
           </div>
           <Image
-            src="/images/image-accordion.png"
+            src="/images/construir-empresa.png"
             alt="Acompañamiento para viajes académicos"
             width={300}
             height={100}
+            unoptimized
             className={`${
               expandedCard === 2 ? "opacity-100" : "opacity-0"
-            } h-[240px] w-full transition-all duration-300 object-cover rounded-3xl`}
+            } h-[260px] w-full transition-all duration-300 object-cover rounded-3xl`}
           />
         </div>
         <div
@@ -110,7 +112,7 @@ export const AcademicAccordion = () => {
               expandedCard === 3 ? "line-clamp-none" : ""
             }`}
           >
-            Descuentos exclusivos INB2B para nuestros aliados y clientes
+            Beneficios exclusivos para nuestros aliados estratégicos y socios comerciales
           </p>
           <div
             className="absolute bottom-8 cursor-pointer left-1/2 -translate-x-1/2"
@@ -119,18 +121,18 @@ export const AcademicAccordion = () => {
             {expandedCard === 3 ? null : <Plus color="#00BEB4" size={32} />}
           </div>
           <Image
-            src="/images/image-accordion.png"
+            src="/images/clientes-beneficiados.png"
             alt="Imagenes exclusivos INB2B"
             width={300}
             height={100}
             className={`${
               expandedCard === 3 ? "opacity-100" : "opacity-0"
-            } h-[240px] w-full transition-all duration-300 object-cover rounded-3xl`}
+            } h-[260px] w-full transition-all duration-300 object-cover rounded-3xl`}
           />
         </div>
       </section>
       <section className="md:hidden font-in-poppins px-4">
-        <Accordion className="text-white space-y-4" type="single" collapsible>
+        <Accordion className=" text-white space-y-4" type="single" collapsible>
           <AccordionItem className="bg-[#D9D9D9]/10 p-4 border-none rounded-3xl" value="item-1">
             <AccordionTrigger className="text-xl">Diplomados internacionales en gestión, tecnologías en salud y
             estrategia clínica</AccordionTrigger>
@@ -147,13 +149,13 @@ export const AcademicAccordion = () => {
           <AccordionItem className="bg-[#D9D9D9]/10 p-4 border-none rounded-3xl" value="item-3">
             <AccordionTrigger className="text-xl">Acompañamiento para viajes académicos y pasantías especializadas</AccordionTrigger>
             <AccordionContent>
-              <Image src="/images/image-accordion.png" alt="Sesiones informativas con ponentes globales" width={300} height={100} className="h-[240px] w-full transition-all duration-300 object-cover rounded-3xl" />
+              <Image src="/images/image-accordion.png" alt="Academic Accordion 1" width={300} height={100} className="h-[240px] w-full transition-all duration-300 object-cover rounded-3xl" />
             </AccordionContent>
           </AccordionItem>
           <AccordionItem className="bg-[#D9D9D9]/10 p-4 border-none rounded-3xl" value="item-4">
             <AccordionTrigger className="text-xl">Descuentos exclusivos INB2B para nuestros aliados y clientes</AccordionTrigger>
             <AccordionContent>
-              <Image src="/images/image-accordion.png" alt="Acompañamiento para viajes académicos" width={300} height={100} className="h-[240px] w-full transition-all duration-300 object-cover rounded-3xl" />
+              <Image src="/images/image-accordion.png" alt="Academic Accordion 1" width={300} height={100} className="h-[240px] w-full transition-all duration-300 object-cover rounded-3xl" />
             </AccordionContent>
           </AccordionItem>
         </Accordion>

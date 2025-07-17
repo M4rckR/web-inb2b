@@ -36,6 +36,7 @@ export const Footer = () => {
                     </div>
                 </div>
                 <div>
+                <p className="pb-4 text-in-gray-text">Redes Sociales</p>
                     {/* <div className="grid grid-cols-2 gap-4 pb-4">
                         <div className="bg-blue-800 rounded-lg col-span-2 py-4">XD</div>
                         <div className="bg-blue-800 rounded-lg py-4">XD</div>
@@ -52,8 +53,7 @@ export const Footer = () => {
                 </div>
                 
             </div>
-            <p className="text-3xl font-in-avantgarde md:text-4xl max-w-2xl font-bold text-white pb-8">+70 proyectos, 3 países y 
-            5 años transformando ideas </p>
+            <p className="text-3xl font-in-avantgarde md:text-4xl max-w-2xl font-bold text-white pb-8">Transforma tu idea en un negocios de salud rentable con INB2B</p>
             <div className="w-full max-w-7xl px-4 h-0.5 bg-in-gray-text"></div>
             <div className="flex items-center justify-between py-6">
                 <Image 

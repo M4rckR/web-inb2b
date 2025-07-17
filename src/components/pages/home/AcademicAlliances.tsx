@@ -3,7 +3,7 @@ import { AcademicAccordion } from "./AcademicAccordion"
 
 export const AcademicAlliances = () => {
   return (
-    <div className="bg-in-blue-main pb-16">
+    <div id="inacademy" className="bg-in-blue-main pb-16">
         <section className="container mx-auto max-w-7xl px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center space-y-8 md:space-y-0">
                 <div className="text-white space-y-6">
