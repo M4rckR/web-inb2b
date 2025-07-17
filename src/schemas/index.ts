@@ -1,27 +1,11 @@
-import { z } from "zod"
+import * as z from "zod";
 
 export const formContactHomeSchema = z.object({
-    nombre: z
-        .string()
-        .min(2, { message: "Mínimo 2 caracteres" })
-        .max(50, { message: "Máximo 50 caracteres" })
-        .regex(/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s'-]+$/, { message: "Solo letras y espacios" }),
-    apellido: z
-        .string()
-        .min(2, { message: "Mínimo 2 caracteres" })
-        .max(50, { message: "Máximo 50 caracteres" })
-        .regex(/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s'-]+$/, { message: "Solo letras y espacios" }),
-    empresa: z
-        .string()
-        .min(1, { message: "Empresa requerida" })
-        .max(100, { message: "Máximo 100 caracteres" }),
-    telefono: z
-        .string()
-        .length(9, { message: "Debe tener 9 dígitos" })
-        .regex(/^9\d{8}$/, { message: "Debe empezar con 9" }),
-    mensaje: z
-        .string()
-        .min(10, { message: "Mínimo 10 caracteres" })
-        .max(1000, { message: "Máximo 1000 caracteres" }),
-})
+  nombre: z.string().min(1, "El nombre es requerido"),
+  apellido: z.string().min(1, "El apellido es requerido"),
+  mensaje: z.string().min(1, "El mensaje es requerido"),
+  empresa: z.string().min(1, "La empresa es requerida"),
+  telefono: z.string().min(9, "El teléfono debe tener 9 dígitos"),
+  aceptaTerminos: z.string().refine((val) => val === "aceptado", "Debes aceptar los términos y condiciones")
+});
 

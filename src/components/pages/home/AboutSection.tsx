@@ -1,9 +1,9 @@
 export const AboutSection = () => {
   return (
-    <div className="bg-in-blue-main text-white py-12 md:py-24">
+    <div id="nosotros" className="bg-in-blue-main text-white py-12 md:py-24">
         <section className="max-w-7xl mx-auto px-4 container space-y-16">
             <div className="space-y-4">
-                <h2 className="text-2xl md:text-4xl font-in-lato font-bold text-center">Sobre nosotros</h2>
+                <h2 className="text-2xl md:text-4xl font-in-avantgarde font-bold text-center">Sobre nosotros</h2>
                 <p className="text-base md:text-lg font-in-poppins max-w-6xl mx-auto text-center leading-[22px]">Somos una agencia consultora especializada en el desarrollo integral de proyectos en el sector salud. Ofrecemos soluciones innovadoras y estratégicas para la implementación, optimización y gestión de servicios de salud, adaptadas a las necesidades específicas de cada cliente.  Nuestro enfoque abarca desde la planificación hasta la ejecución, con el objetivo de mejorar la calidad, eficiencia y sostenibilidad de los proyectos en salud.</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

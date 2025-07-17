@@ -3,12 +3,12 @@ import { FormContactHome } from "./FormContactHome"
 
 export const ContactHomeTab = () => {
   return (
-    <div className="bg-in-blue-main">
-        <section className="max-w-7xl mx-auto px-4 container py-12 md:py-24">
+    <div className="bg-in-blue-main -mt-24 relative z-20">
+        <section className="max-w-7xl mx-auto px-4 container pb-12 md:py-24">
             <div className="grid grid-cols-1 md:grid-cols-12 items-center gap-8 md:gap-16">
                 <div className="space-y-4 md:col-span-5">
                     <h2 className="font-in-poppins text-white">Contacto</h2>
-                    <p className="text-white text-2xl md:text-4xl font-in-lato font-bold">¿Tienes un proyecto en salud o quieres escalar tu clínica?</p>
+                    <p className="text-white text-2xl md:text-4xl font-in-avantgarde font-bold tracking-wide">¿Tienes un proyecto en salud o quieres escalar tu clínica?</p>
                     <p className="text-white font-in-poppins">Te ayudamos a digitalizar tu clínica, atraer más pacientes y posicionarte en el mercado. Desarrollamos sitios web, plataformas y estrategias personalizadas para que tu proyecto de salud crezca de forma sostenible y profesional.</p>
                 </div>
                 <div 

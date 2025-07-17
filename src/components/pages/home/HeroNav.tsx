@@ -19,13 +19,13 @@ export const HeroNav = () => {
           boxShadow: "0px 2.874px 17.246px -0.719px rgba(0, 0, 0, 0.20)", // Sombra más marcada
           backdropFilter: "blur(14px)",
         }}
-        className="max-w-7xl md:fixed md:left-1/2 md:-translate-x-1/2 md:top-6 md:z-20 mx-auto px-10 container rounded-3xl"
+        className="container max-w-7xl md:fixed md:left-1/2 md:-translate-x-1/2 md:top-6 md:z-30 mx-auto px-10 lg:px-10 rounded-3xl"
       >
         <nav className="flex justify-between items-center py-4 md:py-6 text-gray-100 font-in-poppins">
           <div className="hidden lg:flex flex-col lg:flex-row gap-6">
-            <Link href="/">Nosotros</Link>
-            <Link href="/">Servicios</Link>
-            <Link href="/">Unete al equipo</Link>
+            <Link href="#nosotros">Nosotros</Link>
+            <Link href="#servicios">Servicios</Link>
+            <Link href="#unete-al-equipo">Unete al equipo</Link>
           </div>
           <Image
             className="mr-auto w-24 lg:w-auto lg:mx-auto"
@@ -36,10 +36,10 @@ export const HeroNav = () => {
           />
           <div className="hidden lg:flex flex-col lg:flex-row items-center gap-6">
             <Link href="/">InAcademy</Link>
-            <Link href="/">Health Business Club</Link>
+            <Link href="#club-benefits">Health Business Club</Link>
             <Link
               className="bg-in-cyan text-black px-8 py-2 rounded-full transition-all duration-300 hover:bg-in-cyan/80"
-              href="/"
+              href="#contactanos"
             >
               Contactanos
             </Link>

@@ -4,7 +4,7 @@ import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carouse
 
 export const ClubBenefits = () => {
   return (
-    <div className="bg-in-blue-main">
+    <div id="club-benefits" className="bg-in-blue-main">
       <section className="container mx-auto max-w-6xl px-4 py-16">
         <div className="relative mb-16">
           <div className="relative w-full h-auto">
@@ -32,7 +32,7 @@ export const ClubBenefits = () => {
             />
           </div>
           <div className="absolute lg:relative bottom-4 left-6 right-6 lg:left-auto lg:right-auto">
-            <h3 className="flex left-6 lg:absolute bottom-4 font-in-lato text-white text-2xl md:text-4xl font-bold max-w-sm">
+            <h3 className="flex left-6 lg:absolute bottom-4 font-in-avantgarde tracking-wider text-white text-2xl md:text-4xl font-bold max-w-sm">
                 Health Business Club INB2B
             </h3>
             <p className="flex right-6 lg:absolute bottom-4 font-in-poppins max-w-sm text-white lg:text-lg leading-6">
@@ -55,7 +55,7 @@ export const ClubBenefits = () => {
         </div>
       </section>
       <section className="container mx-auto max-w-7xl px-4 pb-16">
-        <h2 className="font-in-lato text-2xl md:text-3xl lg:text-4xl text-center text-white pb-8 md:pb-16">
+        <h2 className="font-in-avantgarde text-2xl md:text-3xl lg:text-4xl text-center text-white pb-8 md:pb-16">
           ¿Qué ofrece el club?
         </h2>
 

@@ -12,7 +12,10 @@ import { formContactHomeSchema } from "@/schemas";
 import { FormContactHomeType } from "@/types";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Label } from "@/components/ui/label";
 
+const WHATSAPP_NUMBER = "51943583887"; // Reemplaza con tu número de WhatsApp
 
 export const FormContactHome = () => {
   const form = useForm<FormContactHomeType>({
@@ -23,15 +26,21 @@ export const FormContactHome = () => {
       mensaje: "",
       empresa: "",
       telefono: "",
+      aceptaTerminos: "",
     },
   });
 
   function onSubmit(data: FormContactHomeType) {
-    console.log(data);
-  }
+    const message = `¡Hola! Mi nombre es ${data.nombre} ${data.apellido}.%0A%0A${
+      data.empresa ? `Represento a la empresa: ${data.empresa}%0A` : ""
+    }Teléfono de contacto: ${data.telefono}%0A%0AMensaje: ${data.mensaje}`;
 
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+    window.open(whatsappUrl, "_blank");
+  }
+  
   return (
-    <div>
+    <div id="contactanos">
       <Form {...form}>
         <form className="space-y-4" onSubmit={form.handleSubmit(onSubmit)}>
           <div className="flex flex-col md:flex-row gap-4">
@@ -69,7 +78,7 @@ export const FormContactHome = () => {
             />
           </div>
           <div className="flex flex-col md:flex-row gap-4">
-          <FormField
+            <FormField
               control={form.control}
               name="telefono"
               render={({ field }) => (
@@ -80,23 +89,21 @@ export const FormContactHome = () => {
                       className="placeholder:text-white border py-5 aria-invalid:border-white border-white text-white aria-invalid:ring-none"
                       maxLength={9}
                       onKeyDown={(e) => {
-                        // Permitir solo números y teclas de control
                         if (
-                          !/[0-9]/.test(e.key) && // No es un número
-                          e.key !== "Backspace" && // No es retroceso
-                          e.key !== "Delete" && // No es eliminar
-                          e.key !== "ArrowLeft" && // No es flecha izquierda
-                          e.key !== "ArrowRight" && // No es flecha derecha
-                          e.key !== "Tab" && // No es tab
-                          !e.ctrlKey && // No es control + algo
-                          !e.metaKey // No es comando + algo
+                          !/[0-9]/.test(e.key) &&
+                          e.key !== "Backspace" &&
+                          e.key !== "Delete" &&
+                          e.key !== "ArrowLeft" &&
+                          e.key !== "ArrowRight" &&
+                          e.key !== "Tab" &&
+                          !e.ctrlKey &&
+                          !e.metaKey
                         ) {
                           e.preventDefault();
                         }
                       }}
                       onPaste={(e) => {
-                        // Prevenir pegar contenido no numérico
-                        const pastedData = e.clipboardData.getData('text');
+                        const pastedData = e.clipboardData.getData("text");
                         if (!/^\d+$/.test(pastedData)) {
                           e.preventDefault();
                         }
@@ -133,9 +140,37 @@ export const FormContactHome = () => {
                 <FormControl>
                   <textarea
                     placeholder="Mensaje"
-                    className="placeholder:text-white border aria-invalid:border-white px-4 rounded-lg py-4 border-white text-white resize-none"
+                    className="w-full placeholder:text-white border aria-invalid:border-white px-4 rounded-lg py-4 border-white text-white resize-none"
                     {...field}
                   />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="aceptaTerminos"
+            render={({ field }) => (
+              <FormItem className="space-y-1">
+                <FormControl>
+                  <RadioGroup
+                    onValueChange={field.onChange}
+                    defaultValue={field.value}
+                    className="flex items-center space-x-2"
+                  >
+                    <FormItem className="flex items-center space-x-0 space-y-0">
+                      <FormControl>
+                        <RadioGroupItem
+                          value="aceptado"
+                          className="border-white text-white"
+                        />
+                      </FormControl>
+                      <Label className="font-normal text-xs text-white">
+                      Autorizo el tratamiento de mis datos personales con fines informativos y comerciales
+                      </Label>
+                    </FormItem>
+                  </RadioGroup>
                 </FormControl>
                 <FormMessage />
               </FormItem>

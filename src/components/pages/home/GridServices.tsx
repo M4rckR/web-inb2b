@@ -9,7 +9,7 @@ export const GridServices = () => {
         {/* Asesoría Integral */}
         <article className="bg-in-blue-dark p-6 rounded-2xl relative">
           <div className="flex justify-between items-start">
-            <h3 className="font-in-lato text-xl lg:text-2xl mb-4">Asesoría Integral</h3>
+            <h3 className="font-in-avantgarde text-xl lg:text-2xl mb-4">Asesoría Integral</h3>
             <div className="size-10 absolute top-5 right-5 bg-in-blue-base/20 rounded-full flex items-center justify-center">
               <FaArrowRight className="text-white text-xl -rotate-45" />
             </div>
@@ -41,7 +41,7 @@ export const GridServices = () => {
         {/* Expansión y crecimiento */}
         <article className="bg-in-blue-dark pt-6 px-6 rounded-2xl relative hidden md:block">
           <div className="flex justify-between items-start">
-            <h3 className="font-in-lato text-xl lg:text-2xl mb-4">Expansión y crecimiento</h3>
+            <h3 className="font-in-avantgarde text-xl lg:text-2xl mb-4">Expansión y crecimiento</h3>
             <div className="size-10 absolute top-5 right-5 bg-in-blue-base/20 rounded-full flex items-center justify-center">
               <FaArrowRight className="text-white text-xl -rotate-45" />
             </div>
@@ -81,7 +81,7 @@ export const GridServices = () => {
         <article className="bg-in-blue-dark p-6 rounded-2xl flex items-center relative">
           <div className="flex-1">
             <div className="flex justify-between items-start  ">
-              <h3 className="font-in-lato text-xl lg:text-2xl mb-4">Health Hunting</h3>
+              <h3 className="font-in-avantgarde text-xl lg:text-2xl mb-4">Health Hunting</h3>
             </div>
             <p className="md:hidden   text-sm mb-4">Reclutamiento médico, administrativo, y gerencial</p>
             <ul className="hidden md:block space-y-2 text-sm">
@@ -113,7 +113,7 @@ export const GridServices = () => {
         {/* Gestión de Operaciones */}
         <article className="bg-in-blue-dark pt-6  px-6 rounded-2xl relative">
           <div className="flex justify-between items-start ">
-            <h3 className="font-in-lato text-xl lg:text-2xl mb-4">Gestión de Operaciones</h3>
+            <h3 className="font-in-avantgarde text-xl lg:text-2xl mb-4">Gestión de Operaciones</h3>
             <div className="size-10 absolute top-5 right-5 bg-in-blue-base/20 rounded-full flex items-center justify-center">
               <FaArrowRight className="text-white text-xl -rotate-45" />
             </div>
@@ -145,7 +145,7 @@ export const GridServices = () => {
         {/* Transformación Digital */}
         <article className="bg-in-blue-dark pt-6 px-6 rounded-2xl relative">
           <div className="flex justify-between items-start">
-            <h3 className="font-in-lato text-xl lg:text-2xl mb-4">Transformación Digital</h3>
+            <h3 className="font-in-avantgarde text-xl lg:text-2xl mb-4">Transformación Digital</h3>
             <div className="size-10 absolute top-5 right-5 bg-in-blue-base/20 rounded-full flex items-center justify-center">
               <FaArrowRight className="text-white text-xl -rotate-45" />
             </div>

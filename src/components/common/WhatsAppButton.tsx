@@ -6,7 +6,7 @@ interface WhatsAppButtonProps {
 }
 
 export const WhatsAppButton: FC<WhatsAppButtonProps> = ({ 
-  phoneNumber = "51999999999", // Número por defecto
+  phoneNumber = "51943583887", // Número por defecto
   message = "¡Hola! Me gustaría obtener más información sobre INB2B" // Mensaje por defecto
 }) => {
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

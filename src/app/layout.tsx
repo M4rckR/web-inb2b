@@ -15,13 +15,13 @@ const geistMono = Geist_Mono({
 });
 
 const poppins = Poppins({
-  variable: "--font-poppins",
+  variable: "--font-in-poppins",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
 
 const lato = Lato({
-  variable: "--font-lato",
+  variable: "--font-in-lato",
   subsets: ["latin"],
   weight: ["400", "700"],
 });
@@ -44,10 +44,11 @@ export default function RootLayout({
       >
         {children}
         <WhatsAppButton 
-          phoneNumber="51999999999"
+          phoneNumber="51943583887"
           message="¡Hola! Me gustaría obtener más información sobre INB2B"
         />
         <Footer />
+        
       </body>
     </html>
   );

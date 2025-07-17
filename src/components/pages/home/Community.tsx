@@ -24,9 +24,9 @@ export const Community = () => {
             />
 
       </div>
-      <div className=" relative z-10 max-w-7xl mx-auto px-4 container">
+      <div className=" relative z-10 max-w-7xl mx-auto px-4 container -translate-y-24">
         <div className="space-y-8">
-          <h2 className="text-white text-center text-2xl md:text-4xl font-in-lato">
+          <h2 className="text-white text-center text-2xl md:text-4xl font-in-avantgarde">
           Comunidad & <br /> Eventos Regionales
           </h2>
           <p className="text-white text-center font-in-poppins max-w-3xl text-base md:text-lg mx-auto">
