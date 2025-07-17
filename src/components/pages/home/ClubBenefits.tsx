@@ -21,7 +21,7 @@ export const ClubBenefits = () => {
               src="/images/club-benefits-vertical.png"
               alt="Club Benefits"
               width={1000}
-              height={314}
+              height={600}
               className="sm:hidden w-full h-auto block"
               unoptimized
             />
