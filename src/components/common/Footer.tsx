@@ -53,7 +53,7 @@ export const Footer = () => {
                 </div>
                 
             </div>
-            <p className="text-3xl font-in-avantgarde md:text-4xl max-w-2xl font-bold text-white pb-8">Transforma tu idea en un negocios de salud rentable con INB2B</p>
+            <p className="text-3xl font-in-avantgarde md:text-4xl max-w-2xl font-bold text-white pb-8">Transforma tu idea en un negocio de salud rentable con INB2B</p>
             <div className="w-full max-w-7xl px-4 h-0.5 bg-in-gray-text"></div>
             <div className="flex items-center justify-between py-6">
                 <Image 
