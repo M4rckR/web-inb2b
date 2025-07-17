@@ -34,6 +34,7 @@ export const HeroNav = () => {
             height={50}
           />
           <div className="hidden lg:flex flex-col lg:flex-row items-center gap-6">
+            <Link href="#health-business-club">Health Business Club</Link>
             <Link href="#inacademy">InAcademy</Link>
             <Link
               className="bg-in-cyan text-black px-8 py-2 rounded-full transition-all duration-300 hover:bg-in-cyan/80"
@@ -41,7 +42,6 @@ export const HeroNav = () => {
             >
               Contáctanos
             </Link>
-            <Link href="#health-business-club">Health Business Club</Link>
           </div>
 
           <div className="hidden">
