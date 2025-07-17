@@ -7,7 +7,7 @@ export const GridServices = () => {
       {/* Columna izquierda */}
       <div className="space-y-6">
         {/* Asesoría Integral */}
-        <article className="bg-in-blue-dark p-6 rounded-2xl relative">
+        <article  data-aos="fade-up" data-aos-duration="1000"  className="bg-in-blue-dark p-6 rounded-2xl relative">
           <div className="flex justify-between items-start">
             <h3 className="font-in-avantgarde text-xl lg:text-2xl mb-4">Asesoría Integral</h3>
             <div className="size-10 absolute top-5 right-5 bg-in-blue-base/20 rounded-full flex items-center justify-center">
@@ -39,7 +39,7 @@ export const GridServices = () => {
         </article>
 
         {/* Expansión y crecimiento */}
-        <article className="bg-in-blue-dark pt-6 px-6 rounded-2xl relative hidden md:block">
+        <article  data-aos="fade-up" data-aos-duration="1000"  className="bg-in-blue-dark pt-6 px-6 rounded-2xl relative hidden md:block">
           <div className="flex justify-between items-start">
             <h3 className="font-in-avantgarde text-xl lg:text-2xl mb-4">Expansión y crecimiento</h3>
             <div className="size-10 absolute top-5 right-5 bg-in-blue-base/20 rounded-full flex items-center justify-center">
@@ -78,7 +78,7 @@ export const GridServices = () => {
       {/* Columna derecha */}
       <div className="space-y-6">
         {/* Health Hunting */}
-        <article className="bg-in-blue-dark p-6 rounded-2xl flex items-center relative">
+        <article  data-aos="fade-up" data-aos-duration="1000"  className="bg-in-blue-dark p-6 rounded-2xl flex items-center relative">
           <div className="flex-1">
             <div className="flex justify-between items-start  ">
               <h3 className="font-in-avantgarde text-xl lg:text-2xl mb-4">Health Hunting</h3>
@@ -111,7 +111,7 @@ export const GridServices = () => {
         </article>
 
         {/* Gestión de Operaciones */}
-        <article className="bg-in-blue-dark pt-6  px-6 rounded-2xl relative">
+        <article  data-aos="fade-up" data-aos-duration="1000"  className="bg-in-blue-dark pt-6  px-6 rounded-2xl relative">
           <div className="flex justify-between items-start ">
             <h3 className="font-in-avantgarde text-xl lg:text-2xl mb-4">Gestión de Operaciones</h3>
             <div className="size-10 absolute top-5 right-5 bg-in-blue-base/20 rounded-full flex items-center justify-center">
@@ -143,7 +143,7 @@ export const GridServices = () => {
         </article>
 
         {/* Transformación Digital */}
-        <article className="bg-in-blue-dark pt-6 px-6 rounded-2xl relative">
+        <article  data-aos="fade-up" data-aos-duration="1000"  className="bg-in-blue-dark pt-6 px-6 rounded-2xl relative">
           <div className="flex justify-between items-start">
             <h3 className="font-in-avantgarde text-xl lg:text-2xl mb-4">Transformación Digital</h3>
             <div className="size-10 absolute top-5 right-5 bg-in-blue-base/20 rounded-full flex items-center justify-center">

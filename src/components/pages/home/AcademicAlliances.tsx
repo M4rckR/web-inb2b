@@ -4,8 +4,8 @@ import { AcademicAccordion } from "./AcademicAccordion"
 export const AcademicAlliances = () => {
   return (
     <div id="inacademy" className="bg-in-blue-main pb-16">
-        <section className="container mx-auto max-w-7xl px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 items-center space-y-8 md:space-y-0">
+        <section  className="container mx-auto max-w-7xl px-4">
+            <div  data-aos="fade-up" data-aos-duration="1000"  className="grid grid-cols-1 md:grid-cols-2 items-center space-y-8 md:space-y-0">
                 <div className="text-white space-y-6">
                     <h2 className="font-in-avantgarde text-2xl md:text-3xl lg:text-4xl text-center md:text-left font-semibold tracking-wider">Diplomados, sesiones internacionales y alianzas académicas</h2>
                     <p className="font-in-poppins text-center md:text-left">INB2B promueve la formación continua de líderes en salud a través de alianzas académicas con instituciones internacionales como la Universidad de Manresa (UVic-UCC) en España y otras universidades líderes en innovación en salud.</p>

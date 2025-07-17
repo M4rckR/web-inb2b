@@ -7,7 +7,7 @@ export const ClubBenefits = () => {
   return (
     <div id="health-business-club" className="bg-in-blue-main">
       <section className="container mx-auto max-w-6xl px-4 py-16">
-        <div className="relative mb-16">
+        <div data-aos="fade-up" data-aos-duration="1000" className="relative mb-16">
           <div className="relative w-full h-auto">
             <Image
               src="/images/club-benefits.png"
@@ -44,7 +44,7 @@ export const ClubBenefits = () => {
          
         </div>
 
-        <p className="text-center text-white font-in-poppins md:text-lg leading-6 mb-10">
+        <p  data-aos="fade-up" data-aos-duration="1000"  className="text-center text-white font-in-poppins md:text-lg leading-6 mb-10">
           El Health Business Club de INB2B es un espacio exclusivo donde
           reunimos a directores, emprendedores, inversores y profesionales del
           sector salud para generar conexiones estratégicas, compartir
@@ -55,7 +55,7 @@ export const ClubBenefits = () => {
           <div className="h-2 w-2 rounded-full bg-in-cyan mx-auto absolute bottom-0 left-1/2 -translate-x-1/2"></div>
         </div>
       </section>
-      <section className="container mx-auto max-w-7xl px-4 pb-16">
+      <section  data-aos="fade-up" data-aos-duration="1000"  className="container mx-auto max-w-7xl px-4 pb-16">
         <h2 className="font-in-avantgarde text-2xl md:text-3xl lg:text-4xl text-center text-white pb-8 md:pb-16">
           ¿Qué ofrece el club?
         </h2>

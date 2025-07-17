@@ -6,8 +6,8 @@ import Link from "next/link"
 export const ScheduleServices = () => {
   return (
     <div id="servicios"  className="bg-in-blue-main text-white md:pb-16">
-        <section className="max-w-7xl mx-auto px-4 container space-y-6 md:space-y-16">
-            <div>
+        <section data-aos="fade-up" data-aos-duration="1000" className="max-w-7xl mx-auto px-4 container space-y-6 md:space-y-16">
+            <div data-aos="fade-up" data-aos-duration="1000">
               <h2 className="text-2xl md:text-base font-bold md:font-normal font-in-lato md:font-in-poppins text-white pb-4 text-center md:text-left ">Nuestros servicios </h2>
               <div className="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
                   <p className="font-in-avantgarde text-base md:text-4xl font-medium px-4 md:px-0 max-w-[600px] text-center tracking-wider md:text-left hidden md:block">Soluciones digitales para hacer crecer tu proyecto en salud</p>

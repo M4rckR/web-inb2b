@@ -13,7 +13,7 @@ export const AcademicAccordion = () => {
 
   return (
     <div className="mt-16">
-      <section className="hidden md:flex gap-4 text-white text-lg font-in-poppins">
+      <section  data-aos="fade-up" data-aos-duration="1000"  className="hidden md:flex gap-4 text-white text-lg font-in-poppins">
         <div
           className={`relative bg-in-bg-cards/10 rounded-3xl p-8 overflow-hidden ${
             expandedCard === 0 ? "cursor-pointer w-3/6" : "w-1/6"

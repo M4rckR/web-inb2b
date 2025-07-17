@@ -5,10 +5,11 @@ import Link from "next/link"
 export const Community = () => {
   return (
     <div className="relative bg-in-blue-main">
-      <div className="relative">
+      <div className="relative ">
           <Image 
               src="/images/semi-ellipse.png" 
               alt="Wave" 
+
               width={900} 
               height={100} 
               unoptimized
@@ -17,6 +18,7 @@ export const Community = () => {
             <Image 
               src="/images/semi-ellipse-mobile.png" 
               alt="Wave" 
+
               width={500} 
               height={100} 
               unoptimized
@@ -24,7 +26,7 @@ export const Community = () => {
             />
 
       </div>
-      <div className=" relative z-10 max-w-7xl mx-auto px-4 container -translate-y-24">
+      <div               data-aos="fade-up" data-aos-duration="800" className=" relative z-10 max-w-7xl mx-auto px-4 container -translate-y-24 ">
         <div className="space-y-8">
           <h2 className="text-white text-center text-2xl md:text-4xl font-in-avantgarde">
           Comunidad & <br /> Eventos Regionales
