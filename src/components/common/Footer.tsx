@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import {FaInstagram, FaTiktok } from "react-icons/fa"
+import {FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa"
 
 export const Footer = () => {
   return (
@@ -43,11 +43,17 @@ export const Footer = () => {
                         <div className="bg-blue-800 rounded-lg py-4">XD</div>
                     </div> */}
                     <div className="flex items-center gap-4">
+                        <Link href="https://www.facebook.com/profile.php?id=61568302134182&locale=es_LA" target="_blank" rel="noopener noreferrer">
+                            <FaFacebook size={22} color="white"/>
+                        </Link>
                         <Link href="https://www.tiktok.com/@inb2.b?_t=ZM-8y6jhmFvG5d&_r=1" target="_blank" rel="noopener noreferrer">
                             <FaTiktok size={22} color="white"/>
                         </Link>
                         <Link href="https://www.instagram.com/inb2.b?igsh=MW9ucXF1M2hnN2x1" target="_blank" rel="noopener noreferrer">
                             <FaInstagram size={22} color="white"/>
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/inb2b-health-partners-49842b335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
+                            <FaLinkedin size={22} color="white"/>
                         </Link>
                     </div>
                 </div>
@@ -63,7 +69,7 @@ export const Footer = () => {
                     height={50}
                 />
                 <p className="text-xs text-in-gray-text">© 2025 INB2B</p>
-            </div>
+            </div>  
         </footer>
     </div>
   )
