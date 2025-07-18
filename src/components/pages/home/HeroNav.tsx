@@ -14,10 +14,9 @@ export const HeroNav = () => {
     <div className="px-4 md:px-0">
       <div
         style={{
-          background:
-            "linear-gradient(127deg, rgba(255, 255, 255, 0.40) 12.11%, rgba(255, 255, 255, 0.10) 73.08%)", // Más oscuro para mejor contraste
-          boxShadow: "0px 2.874px 17.246px -0.719px rgba(0, 0, 0, 0.20)", // Sombra más marcada
-          backdropFilter: "blur(14px)",
+          borderRadius: "30px",
+          background: "linear-gradient(181deg, rgba(255, 255, 255, 0.50) 1.15%, rgba(255, 255, 255, 0.00) 98.91%)",
+          backdropFilter: "blur(35px)",
         }}
         className="container max-w-7xl md:fixed md:left-1/2 md:-translate-x-1/2 md:top-6 md:z-30 mx-auto px-10 rounded-3xl"
       >
