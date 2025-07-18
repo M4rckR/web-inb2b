@@ -9,7 +9,7 @@ export const ContactHomeTab = () => {
                 <div className="space-y-4 md:col-span-5">
                     <h2 className="font-in-poppins text-white">Contacto</h2>
                     <p className="text-white text-2xl md:text-4xl font-in-avantgarde font-bold tracking-wide">¿Tienes un proyecto en salud o quieres escalar tu clínica?</p>
-                    <p className="text-white font-in-poppins">Te ayudamos a digitalizar tu clínica, atraer más pacientes y posicionarte en el mercado. Desarrollamos sitios web, plataformas y estrategias personalizadas para que tu proyecto de salud crezca de forma sostenible y profesional.</p>
+                    <p className="text-white font-in-poppins">Déjanos tus datos y un miembro de nuestro equipo se pondrá en contacto contigo para conocer tu proyecto y brindarte una asesoría personalizada. </p>
                 </div>
                 <div 
                     // style={{

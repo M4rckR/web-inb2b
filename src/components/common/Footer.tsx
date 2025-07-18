@@ -4,7 +4,7 @@ import {FaInstagram, FaTiktok } from "react-icons/fa"
 
 export const Footer = () => {
   return (
-    <div className="bg-in-blue-main">
+    <div className="bg-in-blue-main overflow-x-hidden">
         <footer className="max-w-7xl mx-auto px-4 container font-in-poppins">
             <div data-aos="fade-up" data-aos-duration="800"  className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-4 pb-16 md:pb-12">
                 <div>
