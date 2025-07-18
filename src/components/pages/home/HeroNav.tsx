@@ -18,7 +18,7 @@ export const HeroNav = () => {
           background: "linear-gradient(181deg, rgba(255, 255, 255, 0.50) 1.15%, rgba(255, 255, 255, 0.00) 98.91%)",
           backdropFilter: "blur(35px)",
         }}
-        className="container max-w-7xl md:fixed md:left-1/2 md:-translate-x-1/2 md:top-6 md:z-30 mx-auto px-10 rounded-3xl"
+        className="container max-w-7xl md:fixed md:left-1/2 md:-translate-x-1/2 md:top-6 md:z-30 mx-auto px-10 rounded-3xl py-4 lg:py-0"
       >
         <nav className="flex justify-between items-center py-4 md:py-6 text-gray-100 font-in-poppins">
           <div className="hidden lg:flex flex-col lg:flex-row gap-6">
@@ -26,14 +26,14 @@ export const HeroNav = () => {
             <Link href="#servicios">Servicios</Link>
           </div>
           <Image
-            className="mr-auto w-24 lg:w-auto lg:mx-auto"
+            className="mr-auto w-24 lg:w-auto lg:mx-auto absolute lg:left-1/2 lg:-translate-x-1/2"
             src="/svg/logo-inb2b.svg"
             alt="Logo"
             width={151}
             height={50}
           />
           <div className="hidden lg:flex flex-col lg:flex-row items-center gap-6">
-            <Link href="#health-business-club">Health Business Club</Link>
+            <Link href="#health-business-club" className="hidden xl:block">Health Business Club</Link>
             <Link href="#inacademy">InAcademy</Link>
             <Link
               className="bg-in-cyan text-black px-8 py-2 rounded-full transition-all duration-300 hover:bg-in-cyan/80"
