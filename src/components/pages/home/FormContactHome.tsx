@@ -31,6 +31,14 @@ export const FormContactHome = () => {
   });
 
   function onSubmit(data: FormContactHomeType) {
+    // Evento de Tag Manager antes de abrir WhatsApp
+    if (typeof window !== "undefined") {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "formSubmissionWsp",
+      });
+    }
+
     const message = `¡Hola! Mi nombre es ${data.nombre} ${data.apellido}.%0A%0A${
       data.empresa ? `Represento a la empresa: ${data.empresa}%0A` : ""
     }Teléfono de contacto: ${data.telefono}%0A%0AMensaje: ${data.mensaje}`;
