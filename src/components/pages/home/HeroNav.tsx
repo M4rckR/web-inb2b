@@ -36,8 +36,10 @@ export const HeroNav = () => {
             <Link href="#health-business-club" className="hidden xl:block">Health Business Club</Link>
             <Link href="#inacademy">InAcademy</Link>
             <Link
-              className="bg-in-cyan text-black px-8 py-2 rounded-full transition-all duration-300 hover:bg-in-cyan/80"
-              href="#contactanos"
+              className="cta-wsp-custom bg-in-cyan text-black px-8 py-2 rounded-full transition-all duration-300 hover:bg-in-cyan/80"
+              href="https://wa.me/51943583887?text=¡Hola!%20Vi%20su%20web%20y%20me%20gustaría%20obtener%20más%20información%20sobre%20INB2B"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Contáctanos
             </Link>
