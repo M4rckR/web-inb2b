@@ -83,11 +83,12 @@ export const Community = () => {
 
 
               </div>
-              <Button className="bg-in-cyan cursor-pointer font-in-poppins hover:bg-in-cyan/80 rounded-full text-lg py-6 px-10 text-black">
-                <Link href="https://chat.whatsapp.com/CDs3m8GxO4N5G9hgVO2kMo?mode=r_t" target="_blank" rel="noopener noreferrer">
+              <Link className="cta-club-custom" href="https://chat.whatsapp.com/CDs3m8GxO4N5G9hgVO2kMo?mode=r_t" target="_blank" rel="noopener noreferrer">
+                  <Button className="bg-in-cyan cursor-pointer font-in-poppins hover:bg-in-cyan/80 rounded-full text-lg py-6 px-10 text-black">
                   Unirme ahora
-                </Link>
               </Button>
+                </Link>
+              
             </div>
             <div className="col-span-1 md:col-span-5 hidden md:block">
               <Image  src="/images/comunidad-image.png" alt="Community" width={500} height={500} className="w-full h-full object-cover mx-auto" />

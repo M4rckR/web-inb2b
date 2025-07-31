@@ -79,7 +79,7 @@ export const ClubBenefits = () => {
                       background:
                         "linear-gradient(127deg, rgba(255, 255, 255, 0.40) 12.11%, rgba(255, 255, 255, 0.10) 73.08%)",
                       boxShadow:
-                        "0px 2.874px 17.246px -0.719px rgba(0, 0, 0, 0.20);",
+                        "0px 2.874px 17.246px -0.719px rgba(0, 0, 0, 0.20)",
                     }}
                 >
                     <Image
@@ -99,7 +99,7 @@ export const ClubBenefits = () => {
                 </CarouselContent>
           </Carousel>
         </div>
-        <Link href="https://chat.whatsapp.com/CDs3m8GxO4N5G9hgVO2kMo?mode=r_t" target="_blank" rel="noopener noreferrer">
+        <Link className="cta-club-custom" href="https://chat.whatsapp.com/CDs3m8GxO4N5G9hgVO2kMo?mode=r_t" target="_blank" rel="noopener noreferrer">
             <button className="bg-in-cyan mt-12 text-black font-in-poppins text-lg leading-6 px-12 py-4 rounded-full mx-auto block hover:bg-in-cyan/80 transition-all duration-300 cursor-pointer">
                 Únete al club
             </button>
