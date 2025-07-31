@@ -4,6 +4,7 @@ import "./globals.css";
 import { Footer } from "@/components/common/Footer";
 import { WhatsAppButton } from "@/components/common/WhatsAppButton";
 import "aos/dist/aos.css";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,29 +29,28 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "INB2B - Transformamos ideas en negocios de salud rentables en LATAM",
-  // title: {
-  //   default: "INB2B - Transformamos ideas en negocios de salud rentables en LATAM",
-  //   template: "%s | INB2B Health Partners" 
-  // },
+  title: {
+    default: "INB2B - Transformamos ideas en negocios de salud rentables en LATAM",
+    template: "%s | INB2B Health Partners" 
+  },
   description: "Somos una agencia consultora especializada en el desarrollo integral de proyectos en el sector salud. Ofrecemos soluciones digitales, asesoría integral y formación para hacer crecer tu proyecto en salud en Latinoamérica.",
-  // keywords: [
-  //   "salud digital",
-  //   "consultoría salud",
-  //   "transformación digital salud",
-  //   "plataformas médicas",
-  //   "sitios web clínicas",
-  //   "marketing salud",
-  //   "gestión clínica",
-  //   "tecnologías salud",
-  //   "LATAM salud",
-  //   "emprendimiento salud",
-  //   "escalar clínica",
-  //   "digitalización salud",
-  //   "formación salud",
-  //   "diplomados salud",
-  //   "acompañamiento clínico"
-  // ],
+  keywords: [
+    "salud digital",
+    "consultoría salud",
+    "transformación digital salud",
+    "plataformas médicas",
+    "sitios web clínicas",
+    "marketing salud",
+    "gestión clínica",
+    "tecnologías salud",
+    "LATAM salud",
+    "emprendimiento salud",
+    "escalar clínica",
+    "digitalización salud",
+    "formación salud",
+    "diplomados salud",
+    "acompañamiento clínico"
+  ],
   // authors: [{ name: "INB2B Health Partners" }],
   // creator: "INB2B Health Partners",
   // publisher: "INB2B Health Partners",
@@ -152,6 +152,18 @@ export default function RootLayout({
           message="¡Hola! Vi su web y me gustaría obtener más información sobre INB2B"
         />
         <Footer />
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-XDZXE5V8KT"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XDZXE5V8KT');
+          `}
+        </Script>
       </body>
     </html>
   );
