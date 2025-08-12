@@ -30,10 +30,10 @@ const lato = Lato({
 
 export const metadata: Metadata = {
   title: {
-    default: "INB2B - Transformamos ideas en negocios de salud rentables en LATAM",
+    default: "INB2B - Transformamos ideas en negocios de salud rentables",
     template: "%s | INB2B Health Partners" 
   },
-  description: "Somos una agencia consultora especializada en el desarrollo integral de proyectos en el sector salud. Ofrecemos soluciones digitales, asesoría integral y formación para hacer crecer tu proyecto en salud en Latinoamérica.",
+  description: "Somos una agencia consultora especializada en el desarrollo integral de proyectos en el sector salud. Ofrecemos soluciones digitales y asesoría integrales.",
   keywords: [
     "salud digital",
     "consultoría salud",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     "diplomados salud",
     "acompañamiento clínico"
   ],
-  // authors: [{ name: "INB2B Health Partners" }],
+  authors: [{ name: "INB2B Health Partners" }],
   // creator: "INB2B Health Partners",
   // publisher: "INB2B Health Partners",
   // formatDetection: {
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   //   address: false,
   //   telephone: false,
   // },
-  // metadataBase: new URL("https://inb2b.com"),
+  metadataBase: new URL("https://inb2b.com"),
   // alternates: {
   //   canonical: "/",
   // },
@@ -86,24 +86,24 @@ export const metadata: Metadata = {
   //   images: ["/images/twitter-image.jpg"],
   //   creator: "@inb2b_health",
   // },
-  // robots: {
-  //   index: true,
-  //   follow: true,
-  //   googleBot: {
-  //     index: true,
-  //     follow: true,
-  //     "max-video-preview": -1,
-  //     "max-image-preview": "large",
-  //     "max-snippet": -1,
-  //   },
-  // },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   // verification: {
   //   google: "tu-codigo-verificacion-google",
   //   yandex: "tu-codigo-verificacion-yandex",
   //   yahoo: "tu-codigo-verificacion-yahoo",
   // },
   // category: "healthcare",
-  // classification: "business",
+  classification: "business",
   // other: {
   //   "geo.region": "LATAM",
   //   "geo.placename": "Latinoamérica",
