@@ -60,9 +60,9 @@ export const metadata: Metadata = {
   //   telephone: false,
   // },
   metadataBase: new URL("https://inb2b.com"),
-  // alternates: {
-  //   canonical: "/",
-  // },
+  alternates: {
+    canonical: "/",
+  },
   // openGraph: {
   //   type: "website",
   //   locale: "es_ES",
@@ -97,32 +97,8 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  // verification: {
-  //   google: "tu-codigo-verificacion-google",
-  //   yandex: "tu-codigo-verificacion-yandex",
-  //   yahoo: "tu-codigo-verificacion-yahoo",
-  // },
-  // category: "healthcare",
+  category: "healthcare",
   classification: "business",
-  // other: {
-  //   "geo.region": "LATAM",
-  //   "geo.placename": "Latinoamérica",
-  //   "geo.position": "latitud;longitud",
-  //   "ICBM": "latitud, longitud",
-  //   "DC.title": "INB2B Health Partners",
-  //   "DC.creator": "INB2B Health Partners",
-  //   "DC.subject": "Salud Digital, Consultoría, Transformación Digital",
-  //   "DC.description": "Agencia consultora especializada en el desarrollo integral de proyectos en el sector salud",
-  //   "DC.publisher": "INB2B Health Partners",
-  //   "DC.contributor": "INB2B Health Partners",
-  //   "DC.date": "2024",
-  //   "DC.type": "Service",
-  //   "DC.format": "text/html",
-  //   "DC.identifier": "https://inb2b.com",
-  //   "DC.language": "es",
-  //   "DC.coverage": "LATAM",
-  //   "DC.rights": "Copyright © 2024 INB2B Health Partners",
-  // },
 };
 
 export default function RootLayout({
