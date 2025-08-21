@@ -20,6 +20,7 @@ export const PopUp = () => {
     <div className={`${isOpen ? "opacity-100 z-30" : "opacity-0 z-10 pointer-events-none"} w-full h-full fixed inset-0 flex justify-center items-center bg-black/50 bottom-0 px-4`}
       onClick={() => setIsOpen(false)}>
             <Link
+            id="pop-up"
         className={`${isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full"} transition-all duration-300 relative w-full max-w-[480px]`}
         href={whatsappUrl}
         target="_blank"
